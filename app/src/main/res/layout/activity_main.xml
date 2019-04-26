@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/main_layout">
+    <ScrollView
+
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_scroll_view">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/gallery_selected_image"
+            android:layout_width="@dimen/image_height"
+            android:layout_height="@dimen/image_height"
+            android:layout_gravity="center"
+            android:src="@drawable/placeholder"
+            />
+     <!--   <ImageView
+            android:id="@+id/gallery_selected_image"
+            android:layout_width="@dimen/image_height"
+            android:layout_height="@dimen/image_height"
+            android:contentDescription="@string/image_load"
+            android:src="@drawable/placeholder"
+            android:layout_gravity="center"
+
+            />-->
+    </ScrollView>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cam"
+        android:layout_width="@dimen/height_img1"
+        android:layout_height="@dimen/height_img1"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:layout_centerInParent="true"
+        android:src="@drawable/placeholder"
+        android:layout_below="@+id/scrollView"
+        android:contentDescription="@string/image_load"
+        />
+  <!--  <ImageView
+        android:id="@+id/cam"
+        android:layout_width="@dimen/height_img1"
+        android:layout_height="@dimen/height_img1"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:layout_centerInParent="true"
+        android:src="@drawable/placeholder"
+        android:layout_below="@+id/scrollView"
+        android:contentDescription="@string/image_load"/>-->
+    <Button
+        android:id="@+id/btn_capture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/capture_image"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:layout_below="@+id/cam"
+        />
+    <Button
+        android:id="@+id/btn_capture_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/store_in_gallery"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:layout_below="@+id/btn_capture"/>
+    <Button
+        android:id="@+id/btn_open_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/open_gallery"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:layout_below="@+id/btn_capture_gallery"/>
+
+    <Button
+        android:id="@+id/btn_move_next_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/for_multiple_image"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:layout_below="@+id/btn_open_gallery"/>
+</RelativeLayout>

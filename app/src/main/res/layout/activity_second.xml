@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+    <Button
+        android:id="@+id/btn_select_multiple_images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_multiple_images_from_gallery"
+        android:layout_marginTop="@dimen/spacing_large"
+        />
+    <Button
+        android:id="@+id/btn_move_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/for_next_activity"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:layout_below="@id/btn_select_multiple_images"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycle_images"
+        android:layout_below="@+id/btn_move_next">
+
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>

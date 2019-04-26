@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InternetImageLoadActivity">
+    <Button
+        android:id="@+id/btn_load_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/for_internet_image_loading"
+        android:layout_marginTop="@dimen/spacing_large" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/internet_img"
+        android:src="@drawable/placeholder"
+        android:layout_below="@+id/btn_load_img"/>
+
+
+</RelativeLayout>

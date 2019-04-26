@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CamApp</string>
+    <string name="capture_image">Capture Image</string>
+    <string name="store_in_gallery">Store in Gallery</string>
+    <string name="image_load">Image load</string>
+    <string name="open_gallery">Open Gallery</string>
+    <string name="select_multiple_images_from_gallery">Select Multiple Images From Gallery</string>
+    <string name="for_multiple_image">For Multiple Image</string>
+    <string name="for_internet_image_loading">For Internet Image Loading</string>
+    <string name="for_next_activity">For Next Activity</string>
+</resources>

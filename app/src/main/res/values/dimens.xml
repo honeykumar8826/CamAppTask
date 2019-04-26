@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spacing_large">16dp</dimen>
+    <dimen name="image_height">90dp</dimen>
+    <dimen name="height_scroll_view">120dp</dimen>
+    <dimen name="height_img1">150dp</dimen>
+</resources>
